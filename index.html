@@ -90,13 +90,16 @@
             </div>
 
         </header>
+
         <!-- #header end -->
 
         <section id="slider" class="slider-element full-screen">
 
+
             <div class="full-screen dark section nopadding nomargin noborder ohidden">
 
                 <div class="container clearfix">
+
                     <div class="slider-caption slider-caption-center">
                         <h2 data-animate="fadeInUp">Conferencia</h2>
                         <h2 data-animate="fadeInUp">Formación P.N.L.</h2>
@@ -107,10 +110,13 @@
                         <a data-animate="fadeInUp" data-delay="400" href="#" class="color2 button button-border button-light button-rounded button-large noleftmargin nobottommargin d-none d-md-inline-block" style="margin-top: 30px;">Oradora</a>
 
                     </div>
+                    <div id="countdown-ex1" class="countdown  coming-soon divcenter " style="max-width:300px; position: absolute;"></div>
+
                 </div>
+
                 <div class="video-wrap">
                     <video poster="images/videos/Aerial.mp4" preload="auto" loop autoplay muted>
-						<source src='images/videos/Aerial.mp4' type='video/mp4' />
+						<source style="height: 200% !important;" src='images/videos/Aerial.mp4' type='video/mp4' />
 						<source src='images/videos/Aerial.mp4' type='video/webm' />
 					</video>
                     <div class="video-overlay" style="background-color: rgba(0,0,0,0.45);"></div>
@@ -203,17 +209,43 @@
         <div class="modal-dialog" role="document">
             <div style="background-color: #121212;" class="modal-content">
                 <div class="modal-header">
-                    <h4 style="color: white;" class="modal-title" id="exampleModalLabel"></h4>
+                    <h3 style="color: white;" class="modal-title" id="exampleModalLabel">Adriana M Bakhos S</h3>
                     <button style="color: white;" type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    quien soy
+                    <div class="oc-item">
+                        <div class="team">
+                            <div class="team-image">
+                                <img style="width: 60%;border-radius: 50%; margin:auto;" src="images/me.jpg" alt="Mary Jane">
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <h4>Adriana Bakhos</h4><span>Coaching PNL</span></div>
+                                <a href="https://www.facebook.com/adrianamarilin.bakhossleiman/photos" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                                    <i class="icon-facebook"></i>
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+                                    <i class="icon-twitter"></i>
+                                    <i class="icon-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
+                                    <i class="icon-linkedin"></i>
+                                    <i class="icon-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-icon inline-block si-small si-light si-rounded si-instagram">
+                                    <i class="icon-instagram"></i>
+                                    <i class="icon-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
-                    <button class="button input " type="submit " value="Enviar ">Enviar</button>
+
                     </form>
 
                 </div>
@@ -242,11 +274,11 @@
                                 <textarea class="text-area textoarea" name="text-area " id="text-area "></textarea>
                                 <div class="g " data-netlify-recaptcha="true "></div>
                         </div>
-
+                        <button class="button input " type="submit " value="Enviar ">Enviar</button>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
+
 
                     </form>
 
@@ -291,7 +323,14 @@
 
         });
     </script>
-
+    <script>
+        jQuery(document).ready(function($) {
+            var newDate = new Date(2020, 10, 07);
+            $('#countdown-ex1').countdown({
+                until: newDate
+            });
+        });
+    </script>
 </body>
 
 </html>
